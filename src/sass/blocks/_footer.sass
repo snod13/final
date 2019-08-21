@@ -14,8 +14,8 @@
     margin-bottom: 46px
   &__text
     margin: 0
-    margin-bottom: 46px
-    max-width: 250px
+    margin-bottom: 40px
+    max-width: 260px
     font-size: 15px
     line-height: 24px
   &__social
@@ -27,12 +27,14 @@
     font-size: 36px
   &__space
     display: block
-    height: 40px
+    min-height: 40px
     margin-bottom: 60px
   &-list
     list-style: none
     padding: 0
     &__item
+      +bold
+      font-size: 14px
       margin-bottom: 37px
       &:last-child
         margin-bottom: 0
@@ -51,3 +53,77 @@
     margin-left: 20px
     text-decoration: none
     color: #ffffff
+@media (max-width: 1200px)
+  .footer
+    &-block
+      &__item
+        margin-right: 60px
+        &:last-child
+          margin-right: 0
+    &__title
+      font-size: 25px
+    &__space
+      min-height: 28px
+    &__logo
+      margin-bottom: 33px
+@media (max-width: 900px)
+  .footer
+    &-block
+      margin-bottom: 25px
+      &__item
+        margin-right: 40px
+        &:last-child
+          margin-right: 0
+    &__title
+      font-size: 20px
+      margin-bottom: 35px
+    &__space
+      min-height: 23px
+      margin-bottom: 35px
+    &__text
+      margin-bottom: 30px
+    &__logo
+      width: 200px
+      margin-bottom: 20px
+    &-list
+      &__item
+        margin-bottom: 35px
+    &__line
+      margin-bottom: 30px
+@media (max-width: 768px)
+  .footer
+    &-block
+      justify-content: center
+      align-items: center
+      flex-wrap: wrap
+      &__item
+        &:nth-child(2)
+          margin-right: 30px
+@media (max-width: 460px)
+  .footer
+    &-block
+      flex-direction: column
+      align-items: flex-start
+      margin-bottom: 15px
+      &__item
+        margin-right: 0
+        margin-bottom: 15px
+        &:last-child
+          margin-top: -40px
+    &__space
+      display: none
+    &__text
+      line-height: 1.2
+      margin-bottom: 20px
+    &__title
+      margin-top: 0
+      margin-bottom: 20px
+    &-list
+      &__item
+        margin-bottom: 10px
+    &__line
+      margin-bottom: 15px
+    &__copyright
+      text-align: center
+    &__link
+      margin-left: 0
