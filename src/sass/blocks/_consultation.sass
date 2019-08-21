@@ -5,11 +5,13 @@
     justify-content: space-between
     align-items: center
   &__text
-    // margin-right: 42px
+    display: flex
+    flex-direction: column
   &__title
     max-width: 740px
     margin-bottom: 25px
   &__subtitle
+    display: block
     font-size: 14px
     +bold
     color: $heading-color
@@ -20,3 +22,24 @@
     background-color: $third-color
   &-buttons
     display: flex
+
+@media (max-width: 1200px)
+  .consultation
+    &__title
+      max-width: 500px
+    &__subtitle
+      max-width: 350px
+@media (max-width: 890px)
+  .consultation
+    &__call
+      margin-right: 0
+    &__reception
+      display: none
+@media (max-width: 768px)
+  .consultation
+    &-block
+      flex-direction: column
+      text-align: center
+    &__subtitle
+      margin: auto
+      margin-bottom: 25px
