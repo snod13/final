@@ -16,8 +16,11 @@
       +bold
       margin-right: 30px
       text-transform: uppercase
+      &:last-child
+        margin-right: 0
     &__link
       display: inline-block
+      font-size: 14px
       color: $heading-color
       text-decoration: none
       position: relative
@@ -44,4 +47,90 @@
     border-radius: 50%
     border: none
     background-color: $main-color
+// Стили для бургера
+.burger
+  &-nav
+    display: flex
+    justify-content: space-around
+    align-items: center
+    height: 50%
+    flex-direction: column
+  &__link
+    display: inline-block
+    text-decoration: none
+    color: $heading-color
+    margin-right: 20px
+.menu
+  &-burger
+    background-color: #fff
+    z-index: 0
+    position: fixed
+    top: 0
+    right: 0
+    width: 50%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: 0.5s
+    transform: translateX(100%)
+    &_active
+      transform: translateX(0%)
+  &__btn
+    z-index: 99
+    display: none
+    width: 50px
+    height: 50px
+    position: relative
+  &__line, &__line::before, &__line::after
+    position: absolute
+    top: 50%
+    margin-top: -1px
+    left: 50%
+    margin-left: -10px
+    width: 20px
+    height: 2px
+    background-color: $heading-color
+  &__line
+    &:before, &:after
+      content: ''
+      transition: 0.3s
+  &__line
+    &:before
+      transform: translateY(-5px)
+    &:after
+      transform: translateY(5px)
+.menu__btn_active .menu__line
+  height: 0
+.menu__btn_active .menu__line::before
+  transform: rotate(45deg)
+.menu__btn_active .menu__line::after
+  transform: rotate(-45deg)
+
+@media (max-width: 1200px)
+  .navbar
+    &__logo
+      max-width: 250px
+    &-list
+      &__item
+        margin-right: 20px
+@media (max-width: 992px)
+  .navbar
+    &__button
+      display: none
+    &-list
+      display: none
+  .menu
+    &__btn
+      display: block
+@media (max-width: 768px)
+  .menu
+    &-burger
+      width: 100%
+@media (max-width: 425px)
+  .navbar
+    &__logo
+      width: 200px
+    
+
       
