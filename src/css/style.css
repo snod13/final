@@ -735,6 +735,64 @@ img {
   }
 }
 
+.hero {
+  background: url("../img/hero/hero-bg-2.jpg"), -webkit-gradient(linear, left bottom, left top, from(#816890), to(#dc7aa3));
+  background: url("../img/hero/hero-bg-2.jpg"), linear-gradient(to top, #816890 0%, #dc7aa3 100%);
+  background-size: cover, 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 302px;
+  padding-bottom: 328px;
+}
+
+.hero__img {
+  position: absolute;
+  left: 53px;
+  bottom: -2px;
+}
+
+.hero__info {
+  padding-left: 604px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+}
+
+.hero__subtitle {
+  display: block;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: 'RobotoBold', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero__title {
+  margin: 0;
+  font-size: 88px;
+  text-transform: uppercase;
+  font-family: 'RobotoBold', sans-serif;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.hero__text {
+  margin-bottom: 29px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.hero__btn {
+  color: #3f3f3f;
+  font-family: 'RobotoBold', sans-serif;
+  font-weight: 700;
+}
+
 .consultation {
   padding-bottom: 53px;
 }
