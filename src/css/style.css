@@ -390,6 +390,14 @@ img {
   font-weight: 700;
 }
 
+.section__line {
+  margin-top: 20px;
+  display: block;
+  width: 92px;
+  height: 3px;
+  background-color: #f7f7f7;
+}
+
 .button {
   display: block;
   width: 206px;
@@ -791,6 +799,105 @@ img {
   color: #3f3f3f;
   font-family: 'RobotoBold', sans-serif;
   font-weight: 700;
+}
+
+.advantage {
+  padding-bottom: 95px;
+}
+
+.advantage__title {
+  font-size: 46px;
+}
+
+.advantage__line {
+  margin-bottom: 37px;
+}
+
+.advantage-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advantage-block__title {
+  font-size: 25px;
+  font-family: 'RobotoBold', sans-serif;
+  font-weight: 700;
+  line-height: 28px;
+  max-width: 250px;
+  margin: auto;
+  margin-bottom: 42px;
+}
+
+.advantage-block__img {
+  display: inline-block;
+  margin: auto;
+  width: 168px;
+  height: 168px;
+  background-color: #f7f7f7;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 60px;
+  margin-bottom: 46px;
+  position: relative;
+  z-index: -2;
+}
+
+.advantage-block__img img {
+  z-index: 2;
+}
+
+.advantage-block__img:after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  margin: auto;
+  width: 193px;
+  height: 193px;
+  top: -12.5px;
+  left: -11.5px;
+  content: '';
+  background-image: url("../img/advantage/circles.png");
+}
+
+.advantage__text {
+  font-size: 15px;
+  color: #939393;
+  line-height: 24px;
+  max-width: 375px;
+  margin-bottom: 44px;
+}
+
+.advantage__link {
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'RobotoBold', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #c3759e;
+  position: relative;
+}
+
+.advantage__link:after {
+  position: absolute;
+  display: block;
+  bottom: -10px;
+  left: 18px;
+  content: '';
+  width: 44px;
+  height: 2px;
+  background-color: #c3759e;
+}
+
+.advantage__item {
+  text-align: center;
 }
 
 .consultation {

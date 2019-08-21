@@ -1,0 +1,67 @@
+.advantage
+  padding-bottom: 95px
+  &__title
+    font-size: 46px
+  &__line
+    margin-bottom: 37px
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__title
+      font-size: 25px
+      +bold
+      line-height: 28px
+      max-width: 250px
+      margin: auto
+      margin-bottom: 42px
+    &__img
+      display: inline-block
+      margin: auto
+      width: 168px
+      height: 168px
+      background-color: $secondary
+      text-align: center
+      border-radius: 50%
+      padding-top: 60px
+      margin-bottom: 46px
+      position: relative
+      z-index: -2
+      img
+        z-index: 2
+      &:after
+        position: absolute
+        z-index: -1
+        display: block
+        margin: auto
+        width: 193px
+        height: 193px
+        top: -12.5px
+        left: -11.5px
+        content: ''
+        background-image: url('../img/advantage/circles.png')
+  &__text
+    font-size: 15px
+    color: #939393
+    line-height: 24px
+    max-width: 375px
+    margin-bottom: 44px
+  &__link
+    display: inline-block
+    font-size: 14px
+    +bold
+    text-decoration: none
+    text-transform: uppercase
+    color: $main-color
+    position: relative
+    &:after
+      position: absolute
+      display: block
+      bottom: -10px
+      left: 18px
+      content: ''
+      width: 44px
+      height: 2px
+      background-color: $main-color
+  &__item
+    text-align: center
