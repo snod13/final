@@ -411,6 +411,10 @@ img {
   border-radius: 25px;
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 900px;
