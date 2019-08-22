@@ -747,6 +747,7 @@ img {
   background: url("../img/hero/hero-bg.jpg"), -webkit-gradient(linear, left bottom, left top, from(#816890), to(#dc7aa3));
   background: url("../img/hero/hero-bg.jpg"), linear-gradient(to top, #816890 0%, #dc7aa3 100%);
   background-size: cover, 100%;
+  background-position: left center, center;
   background-repeat: no-repeat;
   position: relative;
   padding-top: 0;
@@ -804,7 +805,7 @@ img {
 }
 
 .hero__btn {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #3f3f3f;
   font-family: 'RobotoBold', sans-serif;
   font-weight: 700;
