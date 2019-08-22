@@ -804,6 +804,7 @@ img {
 }
 
 .hero__btn {
+  background-color: #fff;
   color: #3f3f3f;
   font-family: 'RobotoBold', sans-serif;
   font-weight: 700;
@@ -1030,10 +1031,14 @@ img {
 .consultation__call {
   background-color: #c3759e;
   margin-right: 23px;
+  font-family: 'RobotoBold', sans-serif;
+  font-weight: 700;
 }
 
 .consultation__reception {
   background-color: #816890;
+  font-family: 'RobotoBold', sans-serif;
+  font-weight: 700;
 }
 
 .consultation-buttons {
