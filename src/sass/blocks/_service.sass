@@ -1,0 +1,127 @@
+.service
+  background-color: $secondary
+  padding-bottom: 137px
+  &-heading
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 49px
+  &-cards
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__tag
+    font-size: 14px
+    +bold
+    text-transform: uppercase
+    color: $heading-color
+    margin-right: 35px
+    &:last-child
+      margin-right: 0
+    &:hover
+      background-color: $main-color
+      cursor: pointer
+      color: #ffffff
+      padding: 13px 23px
+      border-radius: 20px
+.card
+  &__block
+    max-width: 276px
+    padding-bottom: 38px
+    background-color: #ffffff
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.05)
+    &:hover
+      background-color: $main-color
+      box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.08)
+      .card__title, .card__text, .card__price, .card__price-tag
+        color: #ffffff
+      .card__line
+        background-color: #ffffff
+        opacity: 1
+  &-item
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+  &__img
+    margin-bottom: 44px
+    img
+      display: block
+  &__title
+    margin-top: 0
+    margin-bottom: 21px
+    max-width: 204px
+    font-size: 22px
+    color: $main-color
+    +bold
+    line-height: 28px
+  &__text
+    margin-top: 0
+    margin-bottom: 23px
+    font-size: 15px
+    color: #363636
+    line-height: 24px
+  &__line
+    display: inline-block
+    width: 53px
+    height: 2px
+    background-color: #363636
+    opacity: 0.09
+    margin-bottom: 20px
+  &__price
+    color: $main-color
+    font-size: 24px
+    +bold
+    &-tag
+      font-size: 14px
+      color: #0a0a0a
+      margin-bottom: 5px
+@media (max-width: 1200px)
+  .card
+    &__block
+      margin: auto
+      margin-bottom: 30px
+    &__fourth
+      margin-bottom: 0
+@media (max-width: 992px)
+  .card
+    &__first
+      margin-right: 87px
+    &__third
+      margin-bottom: 0
+@media (max-width: 768px)
+  .service
+    padding-top: 35px
+    padding-bottom: 35px
+    &__line
+      margin-bottom: 20px
+    &-heading
+      flex-direction: column
+      align-items: flex-start
+    &-cards
+      flex-direction: column
+  .card
+    &__block
+      padding-bottom: 25px
+    &__first
+      margin-right: auto
+    &__third
+      margin-bottom: 30px
+    &__img
+      margin-bottom: 15px
+    &__title
+      margin-bottom: 15px
+      line-height: 1.2
+    &__text
+      margin-bottom: 15px
+      line-height: 1.4
+    &__line
+      margin-bottom: 15px
+    &__price
+      font-size: 21px
+@media (max-width: 495px)
+  .service
+    &-heading
+      margin-bottom: 20px
+    &__tag
+      display: none
