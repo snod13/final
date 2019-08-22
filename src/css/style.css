@@ -1182,6 +1182,31 @@ img {
 }
 
 @media (max-width: 992px) {
+  .service__tag:hover {
+    background-color: transparent;
+    cursor: default;
+    color: #454545;
+    padding: 0;
+    border-radius: 0;
+  }
+  .card__block:hover {
+    background-color: #fff;
+    -webkit-box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.05);
+            box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.05);
+  }
+  .card__block:hover .card__title, .card__block:hover .card__price {
+    color: #c3759e;
+  }
+  .card__block:hover .card__price-tag {
+    color: #0a0a0a;
+  }
+  .card__block:hover .card__text {
+    color: #363636;
+  }
+  .card__block:hover .card__line {
+    background-color: #363636;
+    opacity: 0.09;
+  }
   .card__first {
     margin-right: 87px;
   }
