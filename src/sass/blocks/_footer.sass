@@ -94,29 +94,21 @@
   .footer
     &-block
       justify-content: center
-      align-items: center
-      flex-wrap: wrap
       &__item
-        &:nth-child(2)
-          margin-right: 30px
+        margin-right: 0
+    &__menu
+      display: none
 @media (max-width: 490px)
   .footer
     &-block
-      flex-direction: column
-      align-items: flex-start
       margin-bottom: 15px
       &__item
         margin-right: 0
         margin-bottom: 15px
         &:last-child
           margin-top: -40px
-    &__space
-      display: none
     &__text
       line-height: 1.2
-      margin-bottom: 20px
-    &__title
-      margin-top: 0
       margin-bottom: 20px
     &-list
       &__item
