@@ -1523,9 +1523,6 @@ img {
   .special__title {
     margin: auto;
   }
-  .special__btn {
-    margin: auto;
-  }
 }
 
 @media (max-width: 425px) {
