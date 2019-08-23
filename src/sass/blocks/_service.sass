@@ -80,9 +80,13 @@
   .card
     &__block
       margin: auto
-      margin-bottom: 30px
-    &__fourth
+      margin-bottom: 50px
+    &__first
+      margin-right: 87px
+    &__fourth, &__third
       margin-bottom: 0
+    &-item
+      flex-basis: 50%
 @media (max-width: 992px)
   .service
     &__tag
@@ -106,10 +110,6 @@
         .card__line
           background-color: #363636
           opacity: 0.09
-    &__first
-      margin-right: 87px
-    &__third
-      margin-bottom: 0
 @media (max-width: 768px)
   .service
     padding-top: 35px
@@ -124,10 +124,11 @@
   .card
     &__block
       padding-bottom: 25px
+      margin-bottom: 30px
+    &__fourth
+      margin-bottom: 0
     &__first
       margin-right: auto
-    &__third
-      margin-bottom: 30px
     &__img
       margin-bottom: 15px
     &__title
