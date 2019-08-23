@@ -1,0 +1,116 @@
+.special
+  background: linear-gradient(to top, #816890 0%, #dc7aa3 100%)
+  position: relative
+  padding-top: 0
+  &__img
+    z-index: 1
+    position: absolute
+    left: 10%
+    bottom: 0
+    width: 45%
+    max-height: 871px
+  &-block
+    display: flex
+    justify-content: flex-end
+  &__info
+    z-index: 2
+    flex-basis: 50%
+    padding-top: 220px
+    padding-bottom: 260px
+    color: #ffffff
+  &__text
+    display: inline-block
+    font-size: 20px
+    text-transform: uppercase
+    margin-bottom: 20px
+  &__title
+    margin-top: 0
+    margin-bottom: 0
+    font-size: 114px
+    +bold
+    text-transform: uppercase
+    line-height: 113px
+  &__subtitle
+    display: inline-block
+    margin-bottom: 25px
+    font-size: 62px
+    text-transform: uppercase
+    +bold
+@media (max-width: 1800px)
+  .special
+    &__img
+      left: 8%
+@media (max-width: 1600px)
+  .special
+    &__info
+      padding-top: 160px
+      padding-bottom: 230px
+@media (max-width: 1400px)
+  .special
+    &__info
+      padding-top: 150px
+      padding-bottom: 200px
+    &__title
+      font-size: 80px
+      line-height: 85px
+    &__subtitle
+      font-size: 45px
+@media (max-width: 1200px)
+  .special
+    &__title
+      font-size: 65px
+      line-height: 65px
+    &__subtitle
+      font-size: 30px
+    &__info
+      padding-bottom: 170px
+@media (max-width: 992px)
+  .special
+    &__info
+      padding-top: 60px
+@media (max-width: 768px)
+  .special
+    display: flex
+    flex-direction: column-reverse
+    align-items: center
+    &__img
+      position: relative
+      width: 75%
+      left: 0
+    &__info
+      flex-basis: 100%
+      padding-top: 50px
+      padding-bottom: 0
+      margin-bottom: 25px
+    &__title
+      max-width: 300px
+      font-size: 60px
+      margin-bottom: 20px
+@media (max-width: 560px)
+  .special
+    &__info
+      margin: auto
+      text-align: center
+      margin-bottom: 20px
+    &__text
+      margin-bottom: 15px
+    &__title
+      margin: auto
+    &__btn
+      margin: auto
+@media (max-width: 425px)
+  .special
+    &__img
+      width: 90%
+    &__subtitle
+      font-size: 23px
+      margin-bottom: 15px
+    &__title
+      font-size: 40px
+      line-height: 1
+      margin-bottom: 10px
+    &__text
+      margin-top: 0
+      margin-bottom: 10px
+      font-size: 15px
+      line-height: 1.4
