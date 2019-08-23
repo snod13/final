@@ -1,0 +1,126 @@
+.news
+  background-color: $secondary
+  padding-top: 115px
+  padding-bottom: 97px
+  &-container
+    display: flex
+    justify-content: space-between
+  &-block
+    flex-basis: 48%
+  &__line
+    margin-bottom: 55px
+.our-news
+  &__item
+    align-items: flex-start
+    padding-top: 30px
+    padding-left: 30px
+    padding-right: 30px
+    padding-bottom: 9px
+  &__img
+    margin-bottom: 34px
+  &__title
+    color: $heading-color
+    text-align: left
+    margin-bottom: 26px
+    line-height: 28px
+  &__text
+    color: #979797
+    text-align: left
+    font-size: 14px
+    line-height: 24px
+    margin-bottom: 43px
+.card
+  &-block
+    display: flex
+    justify-content: space-between
+  &__block
+    position: relative
+    background-color: rgba(#ffffff, 0.77)
+    &:hover
+      .our-news__link
+        color: #ffffff
+      .our-news__link::after
+        background-color: #ffffff
+  &__date
+    position: absolute
+    top: -23px
+    left: 23px
+    width: 71px
+    height: 71px
+    font-size: 30px
+    text-transform: uppercase
+    padding-top: 18px
+    +bold
+    text-align: center
+    line-height: 17px
+    background-color: $main-color
+    border-radius: 50%
+    color: #ffffff
+.small
+  margin-top: 5px
+  font-size: 14px
+.announcement
+  padding: 30px
+  background-color: rgba(#ffffff, 0.71)
+  &__link
+    text-decoration: none
+    margin-right: 13px
+    &:last-child
+      margin-right: 0
+    &s
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: auto
+      position: relative
+      bottom: 26px
+      left: 0
+      background-color: #ffffff
+      padding-top: 15px
+      padding-bottom: 15px
+      max-width: 195px
+      border-radius: 24px
+  &__title
+    font-size: 22px
+    color: $heading-color
+    +bold
+    text-align: center
+    margin-bottom: 30px
+  &__nav
+    display: flex
+    align-items: center
+    justify-content: center
+  &__btn
+    font-size: 14px
+    +bold
+    text-transform: uppercase
+    color: #bcbcbc
+    cursor: pointer
+  &__left
+    margin-right: 9px
+  &__line
+    display: inline-block
+    width: 2px
+    height: 12px
+    background-color: #bcbcbc
+    margin-right: 9px
+.slider
+  margin: auto
+  max-width: 528px
+  min-height: 328px
+  margin-bottom: 30px
+  &__item
+    position: relative
+    iframe
+      width: 100%
+      min-height: 328px
+      frameborder: none
+@media (max-width: 1200px)
+  .news
+    &-container
+      flex-direction: column
+@media (max-width: 660px)
+  .card
+    &-block
+      flex-direction: column
+
