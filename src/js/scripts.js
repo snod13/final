@@ -5,6 +5,20 @@ $(document).ready(function() {
     $(this).toggleClass('menu__btn_active');
     $('.menu-burger').toggleClass('menu-burger_active');
   });
+  $('.burger_modify').on('click', function(){
+    $('.menu__btn').toggleClass('menu__btn_active');
+    $('.menu-burger').toggleClass('menu-burger_active');
+  });
+
+  $(window).on('scroll', function(){
+    var navBottom = $('.navbar').offset().top + $('.navbar').outerHeight();
+    var pageTop = $(window).scrollTop();
+    if ($(window).width() <= 992 && navBottom < pageTop) {
+      $('.menu__btn').addClass('menu_fixed');
+    } else {
+      $('.menu__btn').removeClass('menu_fixed');
+    }
+  });
 
   // Cлайдер
   $('.slider').owlCarousel({

@@ -60,10 +60,11 @@
     text-decoration: none
     color: $heading-color
     margin-right: 20px
+    border-bottom: 2px solid $main-color
 .menu
   &-burger
+    z-index: 999
     background-color: #fff
-    z-index: 0
     position: fixed
     top: 0
     right: 0
@@ -77,11 +78,17 @@
     &_active
       transform: translateX(0%)
   &__btn
-    z-index: 99
+    z-index: 1002
     display: none
     width: 50px
     height: 50px
     position: relative
+  &_fixed
+    position: fixed
+    top: 20px
+    right: 20px
+    background-color: #fff
+    border-radius: 50%
   &__line, &__line::before, &__line::after
     position: absolute
     top: 50%
