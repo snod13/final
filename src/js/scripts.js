@@ -9,6 +9,7 @@ $(document).ready(function() {
   $('.slider').owlCarousel({
     loop: true,
     dots: false,
+    margin: 0,
     nav: true,
     navContainer: '.announcement__nav',
     navText: [
