@@ -72,7 +72,7 @@
               <a href="#" class="burger__link">Новости</a>
               <a href="service.html" class="burger__link">Услуги</a>
               <a href="feedback.html" class="burger__link">Отзывы</a>
-              <a href="#" class="burger__link">Контакты</a>
+              <a href="#" class="burger__link modal-activate">Контакты</a>
             </nav>
           </div>
           <ul class="navbar-list">
@@ -92,12 +92,12 @@
               <a href="feedback.html" class="navbar-list__link">Отзывы</a>
             </li>
             <li class="navbar-list__item">
-              <a href="#" class="navbar-list__link">Контакты</a>
+              <a href="#" class="navbar-list__link modal-activate">Контакты</a>
             </li>
           </ul>
         </div>
           <!-- /.navbar-list -->
-        <button class="button navbar__button">
+        <button class="button navbar__button modal-activate">
           <img src="img/navbar/phone.png" alt="Телефон">
         </button>
         <!-- /.navbar__button -->
@@ -118,7 +118,7 @@
             <span class="hero__subtitle">Центр психологической поддержки </span>
             <h1 class="hero__title">Миролюбец</h1>
             <p class="hero__text">Центр работает в Абакане. Работаем по&nbsp;скайпу по миру, он-лайн консультации. По&nbsp;медиации-Сибирь.</p>
-            <button class="button hero__btn">Связаться с нами</button>
+            <button class="button hero__btn modal-activate">Связаться с нами</button>
           </div>
           <!-- /.hero__info -->
         </div>
@@ -139,7 +139,7 @@
             <p class="advantage__text">С другой стороны консультация с широким активом в значительной степени
               обуславливает создание направлений прогрессивного развития. Значимость&nbsp;этих проблем настолько
               очевидна, что</p>
-            <a href="#" class="advantage__link">Подробней</a>
+            <a href="#" class="advantage__link modal-activate">Подробней</a>
           </div>
           <!-- /.advantage__item -->
           <div class="advantage__item">
@@ -150,7 +150,7 @@
             <p class="advantage__text">С другой стороны консультация с широким активом в значительной степени
               обуславливает создание направлений прогрессивного развития. Значимость&nbsp;этих проблем настолько
               очевидна, что</p>
-            <a href="#" class="advantage__link">Подробней</a>
+            <a href="#" class="advantage__link modal-activate">Подробней</a>
           </div>
           <!-- /.advantage__item -->
           <div class="advantage__item">
@@ -161,7 +161,7 @@
             <p class="advantage__text">С другой стороны консультация с широким активом в значительной степени
               обуславливает создание направлений прогрессивного развития. Значимость&nbsp;этих проблем настолько
               очевидна, что</p>
-            <a href="#" class="advantage__link">Подробней</a>
+            <a href="#" class="advantage__link modal-activate">Подробней</a>
           </div>
           <!-- /.advantage__item -->
         </div>
@@ -300,8 +300,8 @@
           </div>
           <!-- /.section-text consultation__text -->
           <div class="consultation-buttons">
-            <button class="button consultation__call">заказать звонок</button>
-            <button class="button consultation__reception">записаться на прием</button>
+            <button class="button consultation__call modal-activate">заказать звонок</button>
+            <button class="button consultation__reception modal-activate">записаться на прием</button>
           </div>
           <!-- /.consultation-buttons -->
         </div>
@@ -364,8 +364,30 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
+  <div class="modal" id="modal">
+      <div class="modal-dialog">
+        <button class="button modal-dialog__close" id="close">&times;</button>
+        <div class="modal-form">
+          <h3 class="form__title">Получите консультацию</h3>
+          <span class="form__subtitle">Просто заполнив форму ниже</span>
+          <form action="#" id="modal-form">
+            <input type="text" name="username" class="form__input modal__input" placeholder="Ваше имя">
+            <input type="tel" name="userphone" class="form__input modal__input phone" placeholder="Ваш телефон">
+            <input type="email" name="useremail" class="form__input modal__input" placeholder="Ваш email">
+            <button class="button modal__button">Заказать звонок</button>
+          </form>
+        </div>
+      </div>
+      <div class="modal-message">
+        <button class="button modal-dialog__close" id="closer">&times;</button>
+        <span class="modal-message__text"></span>
+      </div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 </html>
