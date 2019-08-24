@@ -61,26 +61,30 @@
   font-size: 14px
 .announcement
   padding: 30px
+  max-width: 587px
   background-color: rgba(#ffffff, 0.71)
+  margin: auto
   &__link
     text-decoration: none
     margin-right: 13px
     &:last-child
       margin-right: 0
     &s
+      position: absolute
+      z-index: 9999
       display: flex
       justify-content: center
       align-items: center
       margin: auto
-      position: relative
-      bottom: 26px
-      left: 0
+      bottom: -26px
+      left: calc(50% - 97.5px)
       background-color: #ffffff
       padding-top: 15px
       padding-bottom: 15px
-      max-width: 195px
+      width: 195px
       border-radius: 24px
   &__title
+    margin-top: 0
     font-size: 22px
     color: $heading-color
     +bold
@@ -107,12 +111,12 @@
 .slider
   margin: auto
   max-width: 528px
-  min-height: 328px
   margin-bottom: 30px
   &__item
     position: relative
+    max-width: 528px
     iframe
-      width: 100%
+      width: 528px
       min-height: 328px
       frameborder: none
 @media (max-width: 1200px)

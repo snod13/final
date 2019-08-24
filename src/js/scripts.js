@@ -8,7 +8,7 @@ $(document).ready(function() {
   // слайдер
   $('.slider').owlCarousel({
     loop: true,
-    margin: 20,
+    dots: false,
     nav: true,
     navContainer: '.announcement__nav',
     navText: [
