@@ -2086,6 +2086,11 @@ img {
   margin-bottom: 0;
 }
 
+.footer-list__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .footer__line {
   display: block;
   margin-bottom: 37px;
