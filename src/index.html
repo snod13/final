@@ -307,7 +307,8 @@
           </div>
           <!-- /.section-text consultation__text -->
           <div class="consultation-buttons">
-            <button class="button consultation__call modal-activate wow pulse">заказать звонок</button>
+            <button class="button consultation__call modal-activate wow pulse" id="call"
+              onclick="ym(55052935, 'reachGoal', 'call'); return true;">заказать звонок</button>
             <button class="button consultation__reception modal-activate">записаться на прием</button>
           </div>
           <!-- /.consultation-buttons -->
@@ -377,7 +378,8 @@
         <div class="modal-form">
           <h3 class="form__title">Получите консультацию</h3>
           <span class="form__subtitle">Просто заполнив форму ниже</span>
-          <form action="#" id="modal-form">
+          <form action="#" id="modal-form"
+            onsubmit="ym(55052935, 'reachGoal', 'modal-form'); return true;">
             <input type="text" name="username" class="form__input modal__input" placeholder="Ваше имя">
             <input type="tel" name="userphone" class="form__input modal__input phone" placeholder="Ваш телефон">
             <input type="email" name="useremail" class="form__input modal__input" placeholder="Ваш email">
