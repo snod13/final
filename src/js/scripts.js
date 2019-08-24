@@ -104,6 +104,8 @@ $(document).ready(function() {
           $('input').each(function () {
             $('input').val('');
           });
+          ym(55052935, 'reachGoal', 'modal-form');
+          return true;
         }
       });
     }
