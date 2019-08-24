@@ -29,6 +29,7 @@
   &-form
     text-align: center
     max-width: 450px
+    margin: auto
   &__button
     margin: auto
     background-color: $main-color
@@ -62,3 +63,13 @@
     border: 1px solid $third-color
     &:focus
       border: 1px solid $main-color
+@media (max-width: 600px)
+  .modal
+    &-dialog
+      width: 90%
+      padding: 30px 15px
+  .form
+    &__title
+      font-size: 25px
+    &__subtitle
+      font-size: 15px

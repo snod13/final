@@ -36,12 +36,17 @@ $(document).ready(function() {
   var button = $('.modal-activate');
   var modal = $('.modal');
   var closeForm = $('#close');
+  var closeMessage = $('#closer');
   button.on('click', function (e) {
     e.preventDefault();
     modal.addClass('modal_active');
+    $('.modal-dialog').show();
     $('.modal-message').hide();
   });
   closeForm.on('click', function(){
+    modal.removeClass('modal_active');
+  });
+  closeMessage.on('click', function () {
     modal.removeClass('modal_active');
   });
 

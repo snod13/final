@@ -2239,6 +2239,7 @@ img {
 .modal-form {
   text-align: center;
   max-width: 450px;
+  margin: auto;
 }
 
 .modal__button {
@@ -2256,6 +2257,10 @@ img {
   border-radius: 10px;
   text-align: center;
   background: #fff;
+}
+
+.modal-message__text {
+  font-size: 30px;
 }
 
 .form__title {
@@ -2283,6 +2288,19 @@ img {
 
 .form__input:focus {
   border: 1px solid #c3759e;
+}
+
+@media (max-width: 600px) {
+  .modal-dialog {
+    width: 90%;
+    padding: 30px 15px;
+  }
+  .form__title {
+    font-size: 25px;
+  }
+  .form__subtitle {
+    font-size: 15px;
+  }
 }
 
 .invalid {
