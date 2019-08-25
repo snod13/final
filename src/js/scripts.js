@@ -100,7 +100,7 @@ $(document).ready(function() {
           modal.addClass('modal_active');
           $('.modal-dialog').hide();
           $('.modal-message').show();
-          $('.modal-message__text').text('Спасибо за обращение, ' + data + ', скоро мы вам перезвоним.');
+          $('.modal-message__text').text(data);
           $('input').each(function () {
             $('input').val('');
           });

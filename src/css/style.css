@@ -2415,6 +2415,7 @@ img {
 }
 
 .modal-message__text {
+  display: inline-block;
   margin-top: 20px;
   font-size: 30px;
 }
