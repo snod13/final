@@ -2199,6 +2199,7 @@ img {
 }
 
 .footer__title {
+  display: block;
   margin-top: 15px;
   margin-bottom: 60px;
   font-size: 36px;
