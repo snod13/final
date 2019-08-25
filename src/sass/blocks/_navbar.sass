@@ -47,6 +47,20 @@
     border-radius: 50%
     border: none
     background-color: $main-color
+    overflow: hidden
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 1.5em
+      height: 100%
+      background-color: rgba(#ffffff, 0.6)
+      transform: translateX(-4em) skewX(-45deg)
+    &:hover
+      &:before
+        animation: move-light 1s
 // Стили для бургера
 .burger
   &-nav

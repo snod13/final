@@ -17,12 +17,40 @@
     +bold
     color: $heading-color
   &__call
+    position: relative
     background-color: $main-color
     margin-right: 23px
     +bold
+    overflow: hidden
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 1.5em
+      height: 100%
+      background-color: rgba(#ffffff, 0.6)
+      transform: translateX(-4em) skewX(-45deg)
+    &:hover
+      &:before
+        animation: move-light 0.6s
   &__reception
+    position: relative
     background-color: $third-color
     +bold
+    overflow: hidden
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 1.5em
+      height: 100%
+      background-color: rgba(#ffffff, 0.6)
+      transform: translateX(-4em) skewX(-45deg)
+    &:hover
+      &:before
+        animation: move-light 0.6s
   &-buttons
     display: flex
 
@@ -32,6 +60,16 @@
       max-width: 500px
     &__subtitle
       max-width: 350px
+@media (max-width: 992px)
+  .consultation
+    &__call
+      &:hover
+        &:before
+          animation: none
+    &__reception
+      &:hover
+        &:before
+          animation: none
 @media (max-width: 900px)
   .consultation
     &__call

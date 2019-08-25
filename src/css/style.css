@@ -618,6 +618,25 @@ img {
   border-radius: 50%;
   border: none;
   background-color: #c3759e;
+  overflow: hidden;
+  position: relative;
+}
+
+.navbar__button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5em;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-transform: translateX(-4em) skewX(-45deg);
+          transform: translateX(-4em) skewX(-45deg);
+}
+
+.navbar__button:hover:before {
+  -webkit-animation: move-light 1s;
+          animation: move-light 1s;
 }
 
 .burger-nav {
@@ -822,10 +841,29 @@ img {
 }
 
 .hero__btn {
+  position: relative;
   background-color: #ffffff;
   color: #3f3f3f;
   font-family: 'RobotoBold', sans-serif;
   font-weight: 700;
+  overflow: hidden;
+}
+
+.hero__btn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5em;
+  height: 100%;
+  background-color: rgba(195, 117, 158, 0.6);
+  -webkit-transform: translateX(-4em) skewX(-45deg);
+          transform: translateX(-4em) skewX(-45deg);
+}
+
+.hero__btn:hover:before {
+  -webkit-animation: move-light 0.6s;
+          animation: move-light 0.6s;
 }
 
 @media (max-width: 1600px) {
@@ -861,6 +899,10 @@ img {
 @media (max-width: 992px) {
   .hero__info {
     padding-top: 70px;
+  }
+  .hero__btn:hover:before {
+    -webkit-animation: none;
+            animation: none;
   }
 }
 
@@ -2013,16 +2055,54 @@ img {
 }
 
 .consultation__call {
+  position: relative;
   background-color: #c3759e;
   margin-right: 23px;
   font-family: 'RobotoBold', sans-serif;
   font-weight: 700;
+  overflow: hidden;
+}
+
+.consultation__call:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5em;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-transform: translateX(-4em) skewX(-45deg);
+          transform: translateX(-4em) skewX(-45deg);
+}
+
+.consultation__call:hover:before {
+  -webkit-animation: move-light 0.6s;
+          animation: move-light 0.6s;
 }
 
 .consultation__reception {
+  position: relative;
   background-color: #816890;
   font-family: 'RobotoBold', sans-serif;
   font-weight: 700;
+  overflow: hidden;
+}
+
+.consultation__reception:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5em;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-transform: translateX(-4em) skewX(-45deg);
+          transform: translateX(-4em) skewX(-45deg);
+}
+
+.consultation__reception:hover:before {
+  -webkit-animation: move-light 0.6s;
+          animation: move-light 0.6s;
 }
 
 .consultation-buttons {
@@ -2037,6 +2117,17 @@ img {
   }
   .consultation__subtitle {
     max-width: 350px;
+  }
+}
+
+@media (max-width: 992px) {
+  .consultation__call:hover:before {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .consultation__reception:hover:before {
+    -webkit-animation: none;
+            animation: none;
   }
 }
 
@@ -2385,5 +2476,27 @@ img {
 div.invalid {
   border: none;
   display: none;
+}
+
+@-webkit-keyframes move-light {
+  from {
+    -webkit-transform: translateX(-4em) skewX(-45deg);
+            transform: translateX(-4em) skewX(-45deg);
+  }
+  to {
+    -webkit-transform: translateX(15em) skewX(-45deg);
+            transform: translateX(15em) skewX(-45deg);
+  }
+}
+
+@keyframes move-light {
+  from {
+    -webkit-transform: translateX(-4em) skewX(-45deg);
+            transform: translateX(-4em) skewX(-45deg);
+  }
+  to {
+    -webkit-transform: translateX(15em) skewX(-45deg);
+            transform: translateX(15em) skewX(-45deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */
