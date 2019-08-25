@@ -15,7 +15,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера GMAIL
     $mail->Username   = 'sork.andrew@mail.ru'; // Логин на почте
-    $mail->Password   = 'snod13fox'; // Пароль на почте
+    $mail->Password   = 'sork13fox'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('sork.andrew@mail.ru', 'Миролюбец'); // Адрес самой почты и имя отправителя
