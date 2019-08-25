@@ -120,8 +120,25 @@
       height: 328px
 @media (max-width: 1200px)
   .news
+    padding-top: 60px
+    padding-bottom: 60px
     &-container
       flex-direction: column
+@media (max-width: 992px)
+  .news
+    padding-top: 45px
+    padding-bottom: 50px
+  .card
+    &__block
+      &:hover
+        .our-news__link
+          color: $main-color
+        .our-news__link::after
+          background-color: $main-color
+        .our-news__title
+          color: $heading-color
+        .our-news__text
+          color: #979797
 @media (max-width: 660px)
   .card
     &-block

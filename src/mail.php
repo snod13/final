@@ -1,6 +1,9 @@
 <?php 
 
-require_once('phpmailer/PHPMailerAutoload.php');
+require 'phpmailer/PHPMailer.php';
+require 'phpmailer/SMTP.php';
+require 'phpmailer/Exception.php';
+
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
@@ -8,7 +11,7 @@ $name = $_POST['username'];
 $phone = $_POST['userphone'];
 $email = $_POST['useremail'];
 
-//$mail->SMTPDebug = 3;                               // Enable verbose debug output
+$mail->SMTPDebug = 2;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  									// Specify main and backup SMTP servers
@@ -34,6 +37,7 @@ $mail->AltBody = '';
 
 if(!$mail->send()) {
     echo 'Error';
+    echo 'Mailer Error: ' .$mail->ErrorInfo;
 } else {
     echo $name;
 }

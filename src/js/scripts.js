@@ -93,7 +93,7 @@ $(document).ready(function() {
     },
     submitHandler: function (form) {
       $.ajax({
-        url: 'mail.php',
+        url: 'newmail.php',
         type: 'POST',
         data: $(form).serialize(),
         success: function (data) {
