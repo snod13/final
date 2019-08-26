@@ -26,6 +26,7 @@ $(document).ready(function() {
     dots: false,
     margin: 0,
     nav: true,
+    items: 1,
     navContainer: '.announcement__nav',
     navText: [
       '<span class="announcement__btn announcement__left">Предыдущее</span><span class="announcement__line"></span>',
@@ -34,6 +35,9 @@ $(document).ready(function() {
     navElement: 'span',
     navContainerClass: '.announcement__nav',
     responsive: {
+      1900: {
+        items: 1
+      },
       1200: {
         items: 1
       },

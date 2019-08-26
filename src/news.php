@@ -6,11 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
   <!-- Yandex.Metrika counter -->
   <script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(55052935, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true });</script>
   <!-- /Yandex.Metrika counter -->
-  <title>Новости</title>
+  <title>Миролюбец</title>
 </head>
+
 <body>
 <?php
   include 'header.php';
@@ -74,9 +76,6 @@
               </div>
               <h3 class="announcement__title">Рабочий процесс</h3>
               <div class="announcement__nav">
-                <!-- <span class="announcement__btn announcement__left">Предыдущее</span>
-                <span class="announcement__line"></span>
-                <span class="announcement__btn announcement__right">Следующее</span> -->
               </div>
               <div class="announcement__links">
                 <a href="#" class="announcement__link">
