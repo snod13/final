@@ -1763,6 +1763,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1836,6 +1839,7 @@ img {
 }
 
 .our-news__text {
+  max-width: 215px;
   color: #979797;
   text-align: left;
   font-size: 14px;
@@ -1992,6 +1996,10 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .news-block {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
 }
 
@@ -2158,6 +2166,7 @@ img {
     text-align: center;
   }
   .consultation__subtitle {
+    width: 100%;
     margin: auto;
     margin-bottom: 25px;
   }
