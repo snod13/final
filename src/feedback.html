@@ -262,12 +262,34 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <div class="modal" id="modal">
+    <div class="modal-dialog">
+      <button class="button modal-dialog__close" id="close">&times;</button>
+      <div class="modal-form">
+        <h3 class="form__title">Получите консультацию</h3>
+        <span class="form__subtitle">Просто заполнив форму ниже</span>
+        <form action="#" id="modal-form">
+          <input type="text" name="username" class="form__input modal__input" placeholder="Ваше имя">
+          <input type="tel" name="userphone" class="form__input modal__input phone" placeholder="Ваш телефон">
+          <input type="email" name="useremail" class="form__input modal__input" placeholder="Ваш email">
+          <button class="button modal__button">Заказать звонок</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal-message">
+      <button class="button modal-dialog__close" id="closer">&times;</button>
+      <span class="modal-message__text"></span>
+    </div>
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/scripts.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>
