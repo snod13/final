@@ -60,29 +60,29 @@
           </a>
           <div class="menu-burger">
             <nav class="burger-nav">
-              <a href="index.html" class="burger__link">Главная</a>
-              <a href="index.html#advantage" class="burger__link burger_modify">О Компании</a>
-              <a href="news.html" class="burger__link">Новости</a>
-              <a href="service.html" class="burger__link">Услуги</a>
-              <a href="feedback.html" class="burger__link">Отзывы</a>
+              <a href="index.php" class="burger__link">Главная</a>
+              <a href="index.php#advantage" class="burger__link burger_modify">О Компании</a>
+              <a href="news.php" class="burger__link">Новости</a>
+              <a href="service.php" class="burger__link">Услуги</a>
+              <a href="feedback.php" class="burger__link">Отзывы</a>
               <a href="#" class="burger__link modal-activate">Контакты</a>
             </nav>
           </div>
           <ul class="navbar-list">
             <li class="navbar-list__item">
-              <a href="index.html" class="navbar-list__link">Главная</a>
+              <a href="index.php" class="navbar-list__link">Главная</a>
             </li>
             <li class="navbar-list__item">
-              <a href="index.html#advantage" class="navbar-list__link">О Компании</a>
+              <a href="index.php#advantage" class="navbar-list__link">О Компании</a>
             </li>
             <li class="navbar-list__item">
-              <a href="news.html" class="navbar-list__link">Новости</a>
+              <a href="news.php" class="navbar-list__link">Новости</a>
             </li>
             <li class="navbar-list__item">
-              <a href="service.html" class="navbar-list__link">Услуги</a>
+              <a href="service.php" class="navbar-list__link">Услуги</a>
             </li>
             <li class="navbar-list__item">
-              <a href="feedback.html" class="navbar-list__link">Отзывы</a>
+              <a href="feedback.php" class="navbar-list__link">Отзывы</a>
             </li>
             <li class="navbar-list__item">
               <a href="#" class="navbar-list__link modal-activate">Контакты</a>
