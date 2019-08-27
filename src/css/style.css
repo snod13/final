@@ -2451,6 +2451,10 @@ img {
   font-size: 30px;
 }
 
+.form {
+  max-width: 450px;
+}
+
 .form__title {
   color: #454545;
   font-family: 'RobotoBold', sans-serif;
@@ -2467,8 +2471,9 @@ img {
 }
 
 .form__input {
+  display: block;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #816890;
@@ -2503,11 +2508,14 @@ img {
 
 .invalid {
   border: 1px solid red;
+  margin-bottom: 5px;
 }
 
 div.invalid {
   border: none;
   display: none;
+  font-size: 13px;
+  margin-bottom: 6px;
 }
 
 @-webkit-keyframes move-light {
