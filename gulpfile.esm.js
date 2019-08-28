@@ -4,7 +4,6 @@ var htmlmin = require('gulp-htmlmin');
 var tinyPNG = require('gulp-tinypng-compress');
 var minjs = require('gulp-uglify');
 var rename = require('gulp-rename');
-// var phpmin = require('@cedx/gulp-php-minify');
 
 import {phpMinify} from '@cedx/gulp-php-minify';
 
@@ -39,9 +38,12 @@ gulp.task('move-js', function(cb) {
 });
 
 gulp.task('htmlmin', function (cb) {
-  return gulp.src('./src/*.php')
+  return gulp.src('./src/*.html')
     .pipe(htmlmin({
       collapseWhitespace: true
+    }))
+    .pipe(rename({
+      extname: '.php'
     }))
     .pipe(gulp.dest('dist/'));
   cb();
@@ -62,13 +64,6 @@ gulp.task('tinypng', function (cb) {
   cb();
 });
 
-// gulp.task('phpmin', function (cb) {
-//   return gulp.src('./src/*.php',{read: false})
-//     .pipe(phpmin())
-//     .pipe(gulp.dest('dist/'));
-//   cb();
-// });
-
-gulp.task('build', gulp.parallel('compress:php', 'minify-css', 'min-js', 'move-js', 'fonts', 'htmlmin', 'tinypng', function (cb) {
+gulp.task('build', gulp.parallel('minify-css', 'min-js', 'move-js', 'fonts', 'htmlmin', 'compress:php', 'tinypng', function (cb) {
   cb();
 }));
